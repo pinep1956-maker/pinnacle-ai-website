@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinnacle AI | Future-Proofing Business with Intelligence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --pinnacle-blue: #0ea5e9; /* Professional Sky Blue */
+            --slate-900: #0f172a;
+            --slate-800: #1e293b;
+            --slate-300: #cbd5e1;
+            --white: #ffffff;
+            --gold: #f59e0b; /* For highlighting 'Premium' */
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--slate-900);
+            color: var(--white);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Nav Bar */
+        nav {
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--pinnacle-blue); letter-spacing: -1px; }
+        .logo span { color: var(--white); }
+
+        /* Hero */
+        header {
+            padding: 8rem 5% 4rem;
+            text-align: center;
+            background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.1), transparent);
+        }
+
+        h1 { font-size: 4rem; margin: 0; line-height: 1.1; }
+        .hero-sub { color: var(--slate-300); font-size: 1.25rem; max-width: 700px; margin: 1.5rem auto; }
+        
+        .cta-btn {
+            background: var(--pinnacle-blue);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .cta-btn:hover { transform: scale(1.05); }
+
+        /* Sections */
+        .container { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section-tag { color: var(--pinnacle-blue); font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
+        h2 { font-size: 2.5rem; margin-top: 0.5rem; }
+
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .service-card { background: var(--slate-800); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); }
+        .service-card i { font-size: 2rem; color: var(--pinnacle-blue); margin-bottom: 1rem; }
+
+        /* Case Study Highlight */
+        .case-study {
+            background: linear-gradient(90deg, var(--slate-800), #111827);
+            padding: 3rem;
+            border-radius: 24px;
+            margin-top: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+        .case-content { flex: 1; min-width: 300px; }
+        .case-badge { background: var(--gold); color: black; padding: 4px 12px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; margin-bottom: 1rem; display: inline-block; }
+
+        footer { padding: 4rem 5%; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--slate-300); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PINNACLE <span>AI</span></div>
+        <div><a href="#contact" class="cta-btn" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Get a Quote</a></div>
+    </nav>
+
+    <header>
+        <h1>Scale Your Business <br>With <span style="color:var(--pinnacle-blue)">Infinite Intelligence.</span></h1>
+        <p class="hero-sub">Pinnacle AI builds autonomous systems that think, reason, and manage your operations so you can focus on growth.</p>
+        <a href="#services" class="cta-btn">View Our Solutions</a>
+    </header>
+
+    <div class="container" id="services">
+        <span class="section-tag">Expertise</span>
+        <h2>Our Core Capabilities</h2>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>Autonomous Operations</h3>
+                <p>We replace manual data entry with AI agents that manage inventory, scheduling, and logistics 24/7.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-comments"></i>
+                <h3>Conversational AI</h3>
+                <p>Deploy custom-trained LLMs on WhatsApp or Web to handle complex customer journeys with a human touch.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Legacy Integration</h3>
+                <p>Connecting modern AI (Gemini, GPT-4) to your existing Google Sheets, CRMs, and Databases.</p>
+            </div>
+        </div>
+
+        <div class="case-study">
+            <div class="case-content">
+                <span class="case-badge">CASE STUDY</span>
+                <h3>Montesello Restaurant Group</h3>
+                <p>Implementing a live AI Inventory-Check system that reduced ordering errors by 100% and automated specialty stock reconciliation.</p>
+                <ul style="list-style: none; padding: 0; color: var(--slate-300);">
+                    <li><i class="fas fa-check-circle" style="color:var(--pinnacle-blue)"></i> WhatsApp + Gemini AI Integration</li>
+                    <li><i class="fas fa-check-circle" style="color:var(--pinnacle-blue)"></i> Real-time Google Sheets Database sync</li>
+                    <li><i class="fas fa-check-circle" style="color:var(--pinnacle-blue)"></i> Automated stock-out apologies</li>
+                </ul>
+            </div>
+            <div style="flex:1; text-align:center;">
+                <i class="fas fa-chart-line" style="font-size: 8rem; color: rgba(255,255,255,0.05);"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>Pinnacle AI | Sedgefield & Beyond</p>
+        <p style="font-size: 0.8rem; margin-top: 1rem;">© 2026 Pinnacle AI Solutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
